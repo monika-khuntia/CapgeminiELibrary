@@ -1,1 +1,18 @@
-<p>book works!</p>
+<h1 id="booksTable">Books CRUD</h1>
+
+<p *ngIf="!books"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="books">
+  <thead>
+    <tr>
+      <th>Book Id</th>
+      <th>Book Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.id }}</td>
+      <td>{{ book.bookName }}</td>
+    </tr>
+  </tbody>
+</table>
