@@ -15,5 +15,7 @@ namespace ELibrary.Data
         }
 
         public DbSet<ELibrary.Book> Book { get; set; }
+
+        public DbSet<ELibrary.Users> Users { get; set; }
     }
 }
